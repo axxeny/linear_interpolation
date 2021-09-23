@@ -1,7 +1,7 @@
 using Xunit;
 using Quantlib;
 
-namespace Quantlib.UnitTests.Services
+namespace Quantlib.Interpolation.UnitTests.Services
 {
     public class PrimeService_IsPrimeShould
     {
