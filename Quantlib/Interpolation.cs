@@ -19,12 +19,7 @@ namespace Quantlib
             {
                 throw new ArgumentException("Bad arguments");
             }
-
-            if (data.Count == 1)
-            {
-                return data.Values.First();
-            }
-
+            
             var index = data.Keys.ToList().BinarySearch(targetX);
 
             if (index >= 0)
