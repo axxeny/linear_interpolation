@@ -6,6 +6,6 @@ Teacher Assistant: Anton Roganov
 
 CMF2021 course
 
-## Run tests:
+## How to run tests
 
-``dotnet test``
+Just call ``dotnet test`` from project root directory 
