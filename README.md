@@ -1,8 +1,8 @@
-# Options Pricer project
+# Linear interpolation from Options Pricer project at CMF
 
 Teacher: Anton Filatov
 
-Teacher Assistant: Anton Roganov
+Teacher Assistants involved: Anton Roganov, Sergey Barseghyan
 
 CMF2021 course
 
