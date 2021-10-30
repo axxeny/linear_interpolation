@@ -38,7 +38,7 @@ namespace Quantlib.Tests
         }
         
         [Fact]
-        public void test_No_Extrapolation_Left()
+        public void test_Extrapolation_Left()
         {
             var testData = new SortedList<double, double>
             {
@@ -48,11 +48,11 @@ namespace Quantlib.Tests
                 {4.0d, 1.0d}
             };
 
-            Assert.Throws<ArgumentException>(() => _interpolator.Calculate(testData, -1.0d));
+            Assert.Equal(17.0d, _interpolator.Calculate(testData, -1.0d), 6);
         }        
         
         [Fact]
-        public void test_No_Extrapolation_Right()
+        public void test_Extrapolation_Right()
         {
             var testData = new SortedList<double, double>
             {
@@ -62,7 +62,7 @@ namespace Quantlib.Tests
                 {4.0d, 1.0d}
             };
 
-            Assert.Throws<ArgumentException>(() => _interpolator.Calculate(testData, 5.0d));
+            Assert.Equal(-2.0d, _interpolator.Calculate(testData, 5.0d), 6);
         }        
         
         [Fact]
